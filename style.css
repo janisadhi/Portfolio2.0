@@ -1,0 +1,311 @@
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+body {
+    background-color: #131313;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+
+
+}
+
+
+
+
+.sidebar{
+    width:400px;
+    padding: 1rem;
+
+  
+}
+.content-side{
+    position: fixed;
+   max-width:350px;
+}
+
+nav {
+    padding: .8rem;
+    border-radius: 50px;
+    background-color: #1f1d1d;
+    width: 90%;
+
+}
+
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul li {
+    aspect-ratio: 2/1;
+    width: 50px;
+    /* border: 1px solid red; */
+    list-style: none;
+    padding: 0px 20px;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 12px;
+    transition: color ease-in 0.3s;
+}
+nav ul li a:hover{
+    color: #7700ff;
+}
+
+.side-container {
+    color: #aaaaaa;
+    width: 80%;
+    border: 1px solid white;
+    margin-top: 30px;
+    padding: 2rem;
+    border-radius: 30px;
+
+
+}
+
+.namecard {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.border1 {
+    height: 4px;
+    width: 100px;
+    background-color: #7700ff;
+    border-radius: 30px;
+}
+
+.namecard h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.namecard span {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+/* .display-text h1 {
+
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+} */
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #aaaaaa;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.btn-contact {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #7700ff;
+    color: white;
+    padding: 10px ;
+    border-radius: 20px;
+
+}
+
+.content {
+    padding: 0 20px;
+}
+
+.blank {
+    height: 110px;
+}
+
+/* content section */
+.topic {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.pfp img {
+    aspect-ratio: 4/4;
+    width: 90%;
+    object-fit: contain;
+}
+
+.big-text {
+    margin-top: 20px;
+    color: white;
+    font-size: 5vw;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    /* padding-left: 15px; */
+}
+section{
+    position: relative;
+    margin-bottom: 100px;
+
+}
+section::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left:50px;
+    width:70%;
+    border-bottom: 1px solid  #7700ff;
+    padding-bottom: 70px;
+    z-index: -1;
+    
+}
+
+.big-text span {
+    color: #7700ff;
+}
+.about-text{
+    color:#aaaaaa;
+    font-size: 25px;
+    max-width: 800px;
+    margin-top: 30px;
+    word-spacing: 5px;
+    line-height: 1.5;
+
+}
+
+
+.containerSkills {
+    display: flex;
+    flex-wrap: wrap;
+    width:80%;
+    margin-top: 50px; 
+    justify-content:space-around;
+}
+
+.skillbox {
+    text-align: center;
+    margin: 20px ;
+    width:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillbox:hover{
+    cursor: pointer;
+    i,h2{
+        color:#7700ff;
+    }
+    i{
+    border: 1px solid #7700ff; 
+
+    }
+} 
+
+
+.skillbox i {
+    font-size: 4rem;
+    color:#aaaaaa;
+    border: 1px solid white; 
+    border-radius: 20px;
+    padding:20px 25px;
+    aspect-ratio: 3/2;
+    width:5rem;
+    transition: color ease-in 0.3s;
+    /* transition: border ease-in 0.3s; */
+
+}
+
+.skillbox h2 {
+    text-align: center;
+    margin-top: 10px;
+    color:#aaaaaa;
+    font-size: 1em;
+    transition: color ease-in 0.3s;
+
+}
+.project-card iframe{
+    height:500px;
+    width:100%;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+/* contact */
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+input,textarea{
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border:none;
+    margin-top: 30px;
+    border-bottom: 1px solid white;
+}
+textarea{
+    margin-bottom: 30px;
+}
+input{
+    height:50px;
+}
+#contact{
+    margin-bottom:100px ;
+}
+footer{
+    padding: 20px;
+    color: white;
+}
+
+
+
+
+
+
+.active{
+    color: #7700ff;
+}
+.active i{
+    color:#7700ff;
+}
+
+::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:#7700ff; 
+    /* border-radius: 5px;  */
+  }
+
+  #about{
+    transition: step-end ;
+  }
