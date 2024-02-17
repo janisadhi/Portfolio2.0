@@ -309,3 +309,13 @@ footer{
   #about{
     transition: step-end ;
   }
+  a[title]:hover:after {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    background:#7700ff ;
+    color: white; /* Tooltip text color */
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+}
