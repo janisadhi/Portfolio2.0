@@ -22,7 +22,7 @@ This project is a portfolio website for Janis Adhikari, a frontend developer and
 
 ## Usage
 
-To view the website locally, simply open the `index.html` file in a web browser.
+To view the website locally, simply open the `index.html` file in a web browser.lol
 
 ## Credits
 
